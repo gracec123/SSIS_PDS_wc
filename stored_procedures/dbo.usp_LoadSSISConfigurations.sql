@@ -23,8 +23,8 @@ PURPOSE: Load the SSIS Configurations table
 MODIFICATION LOG:
 Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
-1.0      02/05/2019  GraceChu         1. Created this process for LDS BC IT243
-1.0      02/05/2019  GraceChu         2. Added conn_DFNB3 connection configuration
+1.0      02/05/2021  GraceChu         1. Created this process for LDS BC IT243
+1.0      02/05/2021  GraceChu         2. Added conn_DFNB3 connection configuration
 
 
 RUNTIME: 
