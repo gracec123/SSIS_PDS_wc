@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="SSIS_PDS_Template_wc"
   DTS:PackageType="5"
-  DTS:VersionBuild="38"
-  DTS:VersionGUID="{4ED4DD2D-D6D2-45F5-A397-35B439CA9E5C}">
+  DTS:VersionBuild="39"
+  DTS:VersionGUID="{8ED6E0E8-CC36-4DC4-B4A3-596B5ED0F82A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4192,7 +4192,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Text="NAME:  SSIS_PDS_Template_wc.dtsx&#xA;PURPOSE: SSIS Problem, Design, Solution Package Template&#xA;&#xA;MODIFICATION LOG:&#xA;Ver      Date        Author           Description&#xA;-------  ----------  ---------------  ------------------------------------------------------------------------&#xA;1.0      05/02/2021  Grace Chu (wc)          1. Created this package for LDS BC IT243"
           ParentId="Package\Documentation"
           FontInfo="{assembly:Null}"
-          Size="548,NaN"
+          Size="548,136"
           Id="a7b183f3-93bf-45b8-9a1b-caecb303138d"
           TopLeft="42.6666632393996,21.1929887151234" />
         <ContainerLayout
@@ -4201,7 +4201,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           PanelSize="598.666666666667,212"
           Size="174,42.6666666666667"
           Id="Package\Documentation"
-          TopLeft="71.5000000000001,518.833333333333" />
+          TopLeft="82.1249998416752,515.412280637361" />
         <NodeLayout
           Size="153.333333333334,42.6666666666667"
           Id="Package\Parent Container\Test Connection Managers\DFNB3"
