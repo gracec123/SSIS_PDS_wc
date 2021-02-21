@@ -24,8 +24,8 @@ MODIFICATION LOG:
 Ver      Date        Author           Description
 -------  ----------  ---------------  ------------------------------------------------------------------------
 1.0      02/05/2021  GraceChu         1. Created this process for LDS BC IT243
-1.0      02/05/2021  GraceChu         2. Added conn_DFNB3 connection configuration
-
+1.1      02/05/2021  GraceChu         1. Added conn_DFNB3 connection configuration
+1.2      02/05/2021  GraceChu         1. Added LoadDFNB3_wc configuration
 
 RUNTIME: 
 approx 5 sec
@@ -136,6 +136,26 @@ SELECT c.*
     VALUES
           (
            'SSIS_PDS_Template_wc'
+		 , 'C:\Users\Wing Yu\Desktop\LDS Business College Course\Semester 4\IT 243-01 Data Warehousing\Ensign College\repos\DFNB_src\txt_files\'
+         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
+         , 'String'
+          );
+
+    -- 3.2) LoadDFNB3_wc
+
+    DELETE FROM dbo.[SSIS Configurations]
+     WHERE ConfigurationFilter = 'LoadDFNB3_wc';
+	
+
+	-- 3.2.1) v_data_share_root
+
+    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
+                                        , ConfiguredValue
+                                        , PackagePath
+                                        , ConfiguredValueType)
+    VALUES
+          (
+           'LoadDFNB3_wc'
 		 , 'C:\Users\Wing Yu\Desktop\LDS Business College Course\Semester 4\IT 243-01 Data Warehousing\Ensign College\repos\DFNB_src\txt_files\'
          , '\Package.Variables[User::v_data_share_root].Properties[Value]'
          , 'String'
