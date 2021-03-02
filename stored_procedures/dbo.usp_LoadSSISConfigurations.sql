@@ -26,6 +26,7 @@ Ver      Date        Author           Description
 1.0      02/05/2021  GraceChu         1. Created this process for LDS BC IT243
 1.1      02/05/2021  GraceChu         1. Added conn_DFNB3 connection configuration
 1.2      02/05/2021  GraceChu         1. Added LoadDFNB3_wc configuration
+1.3      03/01/2021  GraceChu         1. Added LoadEXM_wc configuration	
 
 RUNTIME: 
 approx 5 sec
@@ -184,6 +185,26 @@ SELECT c.*
           );
 
 
+		  
+    -- 3.3) LoadEXM_wc
+
+    DELETE FROM dbo.[SSIS Configurations]
+     WHERE ConfigurationFilter = 'LoadEXM_wc';
+	
+
+	-- 3.3.1) v_data_share_root
+
+    INSERT INTO dbo.[SSIS Configurations](ConfigurationFilter
+                                        , ConfiguredValue
+                                        , PackagePath
+                                        , ConfiguredValueType)
+    VALUES
+          (
+           'LoadEXM_wc'
+		 , 'C:\Users\Wing Yu\Desktop\LDS Business College Course\Semester 4\IT 243-01 Data Warehousing\Ensign College\repos\EXM_wc\txt_files\'
+         , '\Package.Variables[User::v_data_share_root].Properties[Value]'
+         , 'String'
+          );
 END;
 
 GO
