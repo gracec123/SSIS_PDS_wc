@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>LDSBC_IT243_wc</Name>
-    <LastWriteTime>2021-03-10T06:38:59.7513573Z</LastWriteTime>
+    <LastWriteTime>2021-03-17T20:47:57.0060306Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -13,7 +13,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>LoadDFNB3_wc.dtsx</Name>
-      <LastWriteTime>2021-03-10T07:07:22.8061801Z</LastWriteTime>
+      <LastWriteTime>2021-03-21T04:22:56.9999028Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>

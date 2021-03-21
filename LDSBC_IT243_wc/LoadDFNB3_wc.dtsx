@@ -12,8 +12,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="LoadDFNB3_wc"
   DTS:PackageType="5"
-  DTS:VersionBuild="137"
-  DTS:VersionGUID="{47371FD9-DDE9-4E25-9C7A-7B9B6EBEC0E2}">
+  DTS:VersionBuild="154"
+  DTS:VersionGUID="{13BE3E56-673D-4C15-914D-2CD62A1B816C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -197,6 +197,151 @@
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectionString="C:\Users\Wing Yu\Desktop\LDS Business College Course\Semester 4\IT 243-01 Data Warehousing\Ensign College\repos\SSIS_PDS_wc\LDSBC_IT243_wc\LoadNAICSCodeHierDim_wc.dtsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Organization Hierarchy.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{CD485B54-79A2-4A9E-8201-829BC9E477D7}"
+      DTS:ObjectName="Organization Hierarchy.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Wing Yu\Desktop\LDS Business College Course\Semester 4\IT 243-01 Data Warehousing\Ensign College\repos\DFNB_dw_wc\csv_files\Organization Hierarchy.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="branch_id"
+              DTS:DTSID="{AAA9E1B0-D541-43FE-879B-F5943702F2F9}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="5"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="branch_code"
+              DTS:DTSID="{B16A2873-1B96-4AC5-A07C-E4D16B7B44DD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="branch_desc"
+              DTS:DTSID="{5FF11118-F1AE-4A47-90DA-549FAD5DDFA5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="region_id"
+              DTS:DTSID="{7E7E092A-C937-43D6-AD2E-2D41C2B27C23}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="region_desc"
+              DTS:DTSID="{2CDD395D-EB08-4354-A9DB-3455E8701F52}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="area_id"
+              DTS:DTSID="{6E9D112F-8021-4E35-898B-97E3D7D561F3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="25"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="area_desc"
+              DTS:DTSID="{F4C86B2E-7F59-4E65-AD72-0D34CE64F0A7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Product Profiles.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6480E80B-930F-4B3A-8E8F-E84E70FAE968}"
+      DTS:ObjectName="Product Profiles.csv">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Wing Yu\Desktop\LDS Business College Course\Semester 4\IT 243-01 Data Warehousing\Ensign College\repos\DFNB_dw_wc\csv_files\Product Profiles.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="prod_id"
+              DTS:DTSID="{4C2848E2-E543-449D-8ECA-5E8DB01A7AEB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="prod_code"
+              DTS:DTSID="{858744EE-7A49-4E6B-BDF4-A69DD6F3468C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="prod_desc"
+              DTS:DTSID="{8DD87C0B-C09A-4F19-B076-D734D56C47EC}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="revolve_ind"
+              DTS:DTSID="{3896C43B-5348-48CA-A970-96A7FD7D6DFE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="131"
+              DTS:DataPrecision="20"
+              DTS:DataScale="4"
+              DTS:TextQualified="True"
+              DTS:ObjectName="loan_amt_lmt"
+              DTS:DTSID="{65028DF7-F481-4A91-8D5B-C0BAA85E7BEE}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -5460,6 +5605,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
           DTS:refId="Package\Parent Container\Branch Tran file breakout"
           DTS:CreationName="STOCK:SEQUENCE"
           DTS:Description="Sequence Container"
+          DTS:Disabled="True"
           DTS:DTSID="{C11BC44C-2B49-4F2E-9593-5B76878624A2}"
           DTS:ExecutableType="STOCK:SEQUENCE"
           DTS:LocaleID="-1"
@@ -6014,7 +6160,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="File System Task"
                   DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="3">
+                  DTS:ThreadHint="0">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <FileSystemData
@@ -6054,7 +6200,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
               DTS:LocaleID="-1"
               DTS:ObjectName="Tran Year List"
               DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-              DTS:ThreadHint="3">
+              DTS:ThreadHint="0">
               <DTS:Variables />
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
@@ -6089,7 +6235,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
           DTS:LocaleID="-1"
           DTS:ObjectName="Data Profiling Task"
           DTS:TaskContact="Data Profiling Task; Microsoft Corporation; SQL Server 2019; (c) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-          DTS:ThreadHint="0">
+          DTS:ThreadHint="3">
           <DTS:Variables />
           <DTS:ObjectData>
             <DataProfilingTaskData
@@ -6207,6 +6353,36 @@ ORDER BY 3,4,5;</DTS:VariableValue>
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
+          DTS:refId="Package\Parent Container\Load dimensions"
+          DTS:CreationName="STOCK:SEQUENCE"
+          DTS:Description="Sequence Container"
+          DTS:Disabled="True"
+          DTS:DTSID="{82E10A27-B7D2-4DF2-BD93-EA4216DDFF56}"
+          DTS:ExecutableType="STOCK:SEQUENCE"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Load dimensions">
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Parent Container\Load dimensions\Load Date Dim"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{63FC4833-FC51-48ED-B263-B5AC5BC9AB2E}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Load Date Dim"
+              DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+              DTS:ThreadHint="1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{EA29BB6C-0248-459C-B966-AE48B0D42F36}"
+                  SQLTask:SqlStatementSource="EXEC dbo.usp_LoadDateDim 91675;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:Executable>
+        <DTS:Executable
           DTS:refId="Package\Parent Container\LoadNAICSCodeHierDim_wc"
           DTS:CreationName="Microsoft.ExecutePackageTask"
           DTS:Description="Execute Package Task"
@@ -6238,7 +6414,6 @@ ORDER BY 3,4,5;</DTS:VariableValue>
               DTS:refId="Package\Parent Container\Num\Load Nums"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
-              DTS:Disabled="True"
               DTS:DTSID="{7665052a-8f0f-4bd6-964a-c4731d9da8b4}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
@@ -6249,7 +6424,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
               <DTS:ObjectData>
                 <SQLTask:SqlTaskData
                   SQLTask:Connection="{EA29BB6C-0248-459C-B966-AE48B0D42F36}"
-                  SQLTask:SqlStatementSource="EXEC dbo.usp_Load_Nums 10;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  SQLTask:SqlStatementSource="EXEC dbo.usp_Load_Nums 100000;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
@@ -6506,7 +6681,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Truncate Nums"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="2">
+                  DTS:ThreadHint="1">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -6790,7 +6965,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
                   DTS:LocaleID="-1"
                   DTS:ObjectName="Truncate Nums"
                   DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-                  DTS:ThreadHint="1">
+                  DTS:ThreadHint="2">
                   <DTS:Variables />
                   <DTS:ObjectData>
                     <SQLTask:SqlTaskData
@@ -6848,6 +7023,7 @@ ORDER BY 3,4,5;</DTS:VariableValue>
               DTS:refId="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container"
               DTS:CreationName="STOCK:FOREACHLOOP"
               DTS:Description="Foreach Loop Container"
+              DTS:Disabled="True"
               DTS:DTSID="{91B9DC86-06F0-4F71-93C2-8B1C796087E3}"
               DTS:ExecutableType="STOCK:FOREACHLOOP"
               DTS:LocaleID="-1"
@@ -7027,75 +7203,6 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyVersion("1.0.0.0")> 
 <Assembly: AssemblyFileVersion("1.0.0.0")> ]]></ProjectItem>
                       <ProjectItem
-                        Name="My Project\Settings.settings"
-                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname" GeneratedClassName="MySettings">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
-                      <ProjectItem
-                        Name="My Project\Settings.Designer.vb"
-                        Encoding="UTF8"><![CDATA['------------------------------------------------------------------------------
-' <autogenerated>
-'     This code was generated by a tool.
-'
-'     Changes to this file may cause incorrect behavior and will be lost if
-'     the code is regenerated.
-' </autogenerated>
-'------------------------------------------------------------------------------
-
-Option Strict Off
-Option Explicit On
-
-
-
-Partial Friend NotInheritable Class MySettings
-    Inherits System.Configuration.ApplicationSettingsBase
-
-    Private Shared m_Value As MySettings
-
-    Private Shared m_SyncObject As Object = New Object
-
-    <System.Diagnostics.DebuggerNonUserCode()> _
-    Public Shared ReadOnly Property Value() As MySettings
-        Get
-            If (MySettings.m_Value Is Nothing) Then
-                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
-                If (MySettings.m_Value Is Nothing) Then
-                    Try
-                        MySettings.m_Value = New MySettings
-                    Finally
-                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
-                    End Try
-                End If
-            End If
-            Return MySettings.m_Value
-        End Get
-    End Property
-End Class]]></ProjectItem>
-                      <ProjectItem
-                        Name="Project"
-                        Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:Language>msBuild</msb:Language>
-    <msb:CodeName>ST_91a9f570786a4eb89faec335a1b1f0b5</msb:CodeName>
-    <msb:DisplayName>ST_91a9f570786a4eb89faec335a1b1f0b5</msb:DisplayName>
-    <msb:ProjectId>{13D0C367-1D27-4862-A319-9D4753255BEE}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_91a9f570786a4eb89faec335a1b1f0b5.vbproj" />
-    <msb:File Include="My Project\AssemblyInfo.vb" />
-    <msb:File Include="ScriptMain.vb" />
-    <msb:File Include="My Project\Resources.resx" />
-    <msb:File Include="My Project\Resources.Designer.vb" />
-    <msb:File Include="My Project\Settings.settings" />
-    <msb:File Include="My Project\Settings.Designer.vb" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
-                      <ProjectItem
                         Name="ScriptMain.vb"
                         Encoding="UTF8"><![CDATA[#Region "Help:  Introduction to the script task"
 'The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -7221,6 +7328,75 @@ Partial Public Class ScriptMain
 #End Region
 
 End Class]]></ProjectItem>
+                      <ProjectItem
+                        Name="My Project\Settings.settings"
+                        Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname" GeneratedClassName="MySettings">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+                      <ProjectItem
+                        Name="My Project\Settings.Designer.vb"
+                        Encoding="UTF8"><![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+
+Partial Friend NotInheritable Class MySettings
+    Inherits System.Configuration.ApplicationSettingsBase
+
+    Private Shared m_Value As MySettings
+
+    Private Shared m_SyncObject As Object = New Object
+
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Public Shared ReadOnly Property Value() As MySettings
+        Get
+            If (MySettings.m_Value Is Nothing) Then
+                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
+                If (MySettings.m_Value Is Nothing) Then
+                    Try
+                        MySettings.m_Value = New MySettings
+                    Finally
+                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
+                    End Try
+                End If
+            End If
+            Return MySettings.m_Value
+        End Get
+    End Property
+End Class]]></ProjectItem>
+                      <ProjectItem
+                        Name="Project"
+                        Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="3.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:Language>msBuild</msb:Language>
+    <msb:CodeName>ST_91a9f570786a4eb89faec335a1b1f0b5</msb:CodeName>
+    <msb:DisplayName>ST_91a9f570786a4eb89faec335a1b1f0b5</msb:DisplayName>
+    <msb:ProjectId>{13D0C367-1D27-4862-A319-9D4753255BEE}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_91a9f570786a4eb89faec335a1b1f0b5.vbproj" />
+    <msb:File Include="My Project\AssemblyInfo.vb" />
+    <msb:File Include="ScriptMain.vb" />
+    <msb:File Include="My Project\Resources.resx" />
+    <msb:File Include="My Project\Resources.Designer.vb" />
+    <msb:File Include="My Project\Settings.settings" />
+    <msb:File Include="My Project\Settings.Designer.vb" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
                       <ProjectItem
                         Name="My Project\Resources.resx"
                         Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -9332,6 +9508,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               DTS:refId="Package\Parent Container\Reload raw data - Flat File\Load data"
               DTS:CreationName="Microsoft.Pipeline"
               DTS:Description="Data Flow Task"
+              DTS:Disabled="True"
               DTS:DTSID="{45043A78-5B22-4E27-B926-B285E5FCD932}"
               DTS:ExecutableType="Microsoft.Pipeline"
               DTS:LocaleID="-1"
@@ -31310,9 +31487,946 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               </DTS:ObjectData>
             </DTS:Executable>
             <DTS:Executable
+              DTS:refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy"
+              DTS:CreationName="STOCK:SEQUENCE"
+              DTS:Description="Sequence Container"
+              DTS:DTSID="{7168af84-0476-4180-a676-b62d50adf0d9}"
+              DTS:ExecutableType="STOCK:SEQUENCE"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Organization Hierarchy">
+              <DTS:Variables />
+              <DTS:Executables>
+                <DTS:Executable
+                  DTS:refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data"
+                  DTS:CreationName="Microsoft.Pipeline"
+                  DTS:Description="Data Flow Task"
+                  DTS:DTSID="{4079b9c2-c38e-4395-a15f-899a384a7deb}"
+                  DTS:ExecutableType="Microsoft.Pipeline"
+                  DTS:LocaleID="-1"
+                  DTS:ObjectName="Load data"
+                  DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+                  <DTS:Variables />
+                  <DTS:ObjectData>
+                    <pipeline
+                      version="1">
+                      <components>
+                        <component
+                          refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv"
+                          componentClassID="Microsoft.FlatFileSource"
+                          contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                          description="Flat File Source"
+                          localeId="1033"
+                          name="Organization Hierarchy csv"
+                          usesDispositions="true"
+                          version="1">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Specifies whether zero-length columns are treated as null."
+                              name="RetainNulls">false</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                              name="FileNameColumnName"></property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Connections[FlatFileConnection]"
+                              connectionManagerID="Package.ConnectionManagers[Organization Hierarchy.csv]"
+                              connectionManagerRefId="Package.ConnectionManagers[Organization Hierarchy.csv]"
+                              name="FlatFileConnection" />
+                          </connections>
+                          <outputs>
+                            <output
+                              refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output]"
+                              name="Flat File Source Output">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_id]"
+                                  dataType="i2"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[branch_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_id]"
+                                  name="branch_id"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_code]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[branch_code]"
+                                  length="5"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_code]"
+                                  name="branch_code"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[branch_desc]"
+                                  length="25"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_desc]"
+                                  name="branch_desc"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[region_id]"
+                                  dataType="i2"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[region_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[region_id]"
+                                  name="region_id"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[region_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[region_desc]"
+                                  length="25"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[region_desc]"
+                                  name="region_desc"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[area_id]"
+                                  dataType="i2"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[area_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[area_id]"
+                                  name="area_id"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[area_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[area_desc]"
+                                  length="25"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[area_desc]"
+                                  name="area_desc"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                              </outputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[branch_id]"
+                                  dataType="i2"
+                                  name="branch_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[branch_code]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="5"
+                                  name="branch_code" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[branch_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="25"
+                                  name="branch_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[region_id]"
+                                  dataType="i2"
+                                  name="region_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[region_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="25"
+                                  name="region_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[area_id]"
+                                  dataType="i2"
+                                  name="area_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].ExternalColumns[area_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="25"
+                                  name="area_desc" />
+                              </externalMetadataColumns>
+                            </output>
+                            <output
+                              refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Error Output]"
+                              isErrorOut="true"
+                              name="Flat File Source Error Output">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                                  codePage="1252"
+                                  dataType="text"
+                                  description="Flat File Source Error Output Column"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                                  name="Flat File Source Error Output Column" />
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                        <component
+                          refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER"
+                          componentClassID="Microsoft.OLEDBDestination"
+                          contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                          description="OLE DB Destination"
+                          name="stg_ORG_HIER"
+                          usesDispositions="true"
+                          version="4">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                              name="CommandTimeout">0</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the name of the database object used to open a rowset."
+                              name="OpenRowset">[stg].[ORG_HIER]</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the variable that contains the name of the database object used to open a rowset."
+                              name="OpenRowsetVariable"></property>
+                            <property
+                              dataType="System.String"
+                              description="The SQL command to be executed."
+                              name="SqlCommand"
+                              UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the column code page to use when code page information is unavailable from the data source."
+                              name="DefaultCodePage">1252</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Forces the use of the DefaultCodePage property value when describing character data."
+                              name="AlwaysUseDefaultCodePage">false</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the mode used to access the database."
+                              name="AccessMode"
+                              typeConverter="AccessMode">3</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                              name="FastLoadKeepIdentity">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                              name="FastLoadKeepNulls">false</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                              name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                              name="FastLoadMaxInsertCommitSize">2147483647</property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Connections[OleDbConnection]"
+                              connectionManagerID="Package.ConnectionManagers[DFNB3]"
+                              connectionManagerRefId="Package.ConnectionManagers[DFNB3]"
+                              description="The OLE DB runtime connection used to access the database."
+                              name="OleDbConnection" />
+                          </connections>
+                          <inputs>
+                            <input
+                              refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input]"
+                              errorOrTruncationOperation="Insert"
+                              errorRowDisposition="FailComponent"
+                              hasSideEffects="true"
+                              name="OLE DB Destination Input">
+                              <inputColumns>
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].Columns[branch_id]"
+                                  cachedDataType="i2"
+                                  cachedName="branch_id"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[branch_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_id]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].Columns[branch_code]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="5"
+                                  cachedName="branch_code"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[branch_code]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_code]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].Columns[branch_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="25"
+                                  cachedName="branch_desc"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[branch_desc]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[branch_desc]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].Columns[region_id]"
+                                  cachedDataType="i2"
+                                  cachedName="region_id"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[region_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[region_id]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].Columns[region_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="25"
+                                  cachedName="region_desc"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[region_desc]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[region_desc]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].Columns[area_id]"
+                                  cachedDataType="i2"
+                                  cachedName="area_id"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[area_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[area_id]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].Columns[area_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="25"
+                                  cachedName="area_desc"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[area_desc]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output].Columns[area_desc]" />
+                              </inputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[branch_id]"
+                                  dataType="i2"
+                                  name="branch_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[branch_code]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="5"
+                                  name="branch_code" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[branch_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="25"
+                                  name="branch_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[region_id]"
+                                  dataType="i2"
+                                  name="region_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[region_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="25"
+                                  name="region_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[area_id]"
+                                  dataType="i2"
+                                  name="area_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input].ExternalColumns[area_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="25"
+                                  name="area_desc" />
+                              </externalMetadataColumns>
+                            </input>
+                          </inputs>
+                          <outputs>
+                            <output
+                              refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Outputs[OLE DB Destination Error Output]"
+                              exclusionGroup="1"
+                              isErrorOut="true"
+                              name="OLE DB Destination Error Output"
+                              synchronousInputId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                      </components>
+                      <paths>
+                        <path
+                          refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data.Paths[Flat File Source Output]"
+                          endId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER.Inputs[OLE DB Destination Input]"
+                          name="Flat File Source Output"
+                          startId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv.Outputs[Flat File Source Output]" />
+                      </paths>
+                    </pipeline>
+                  </DTS:ObjectData>
+                </DTS:Executable>
+                <DTS:Executable
+                  DTS:refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Truncate data"
+                  DTS:CreationName="Microsoft.ExecuteSQLTask"
+                  DTS:Description="Execute SQL Task"
+                  DTS:DTSID="{3ea1502d-5842-4a19-ae49-9b083e76eab1}"
+                  DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+                  DTS:LocaleID="-1"
+                  DTS:ObjectName="Truncate data"
+                  DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+                  DTS:ThreadHint="1">
+                  <DTS:Variables />
+                  <DTS:ObjectData>
+                    <SQLTask:SqlTaskData
+                      SQLTask:Connection="{EA29BB6C-0248-459C-B966-AE48B0D42F36}"
+                      SQLTask:SqlStatementSource="TRUNCATE TABLE stg.ORG_HIER;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  </DTS:ObjectData>
+                </DTS:Executable>
+              </DTS:Executables>
+              <DTS:PrecedenceConstraints>
+                <DTS:PrecedenceConstraint
+                  DTS:refId="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy.PrecedenceConstraints[Constraint]"
+                  DTS:CreationName=""
+                  DTS:DTSID="{5f3eb1a2-ea87-4255-b904-26317ce689ff}"
+                  DTS:From="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Truncate data"
+                  DTS:LogicalAnd="True"
+                  DTS:ObjectName="Constraint"
+                  DTS:To="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data" />
+              </DTS:PrecedenceConstraints>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles"
+              DTS:CreationName="STOCK:SEQUENCE"
+              DTS:Description="Sequence Container"
+              DTS:DTSID="{B894DB77-8AD0-4E06-9BCD-840D0E5364D4}"
+              DTS:ExecutableType="STOCK:SEQUENCE"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Product Profiles">
+              <DTS:Variables />
+              <DTS:Executables>
+                <DTS:Executable
+                  DTS:refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data"
+                  DTS:CreationName="Microsoft.Pipeline"
+                  DTS:Description="Data Flow Task"
+                  DTS:DTSID="{929FD4CE-7537-489D-BEF7-E4455AECDBD4}"
+                  DTS:ExecutableType="Microsoft.Pipeline"
+                  DTS:LocaleID="-1"
+                  DTS:ObjectName="Load data"
+                  DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+                  <DTS:Variables />
+                  <DTS:ObjectData>
+                    <pipeline
+                      version="1">
+                      <components>
+                        <component
+                          refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv"
+                          componentClassID="Microsoft.FlatFileSource"
+                          contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                          description="Flat File Source"
+                          localeId="1033"
+                          name="Product Profiles csv"
+                          usesDispositions="true"
+                          version="1">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Specifies whether zero-length columns are treated as null."
+                              name="RetainNulls">false</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                              name="FileNameColumnName"></property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Connections[FlatFileConnection]"
+                              connectionManagerID="Package.ConnectionManagers[Product Profiles.csv]"
+                              connectionManagerRefId="Package.ConnectionManagers[Product Profiles.csv]"
+                              name="FlatFileConnection" />
+                          </connections>
+                          <outputs>
+                            <output
+                              refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output]"
+                              name="Flat File Source Output">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_id]"
+                                  dataType="i2"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[prod_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_id]"
+                                  name="prod_id"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_code]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[prod_code]"
+                                  length="10"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_code]"
+                                  name="prod_code"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[prod_desc]"
+                                  length="50"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_desc]"
+                                  name="prod_desc"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[revolve_ind]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[revolve_ind]"
+                                  length="1"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[revolve_ind]"
+                                  name="revolve_ind"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[loan_amt_lmt]"
+                                  dataType="numeric"
+                                  errorOrTruncationOperation="Conversion"
+                                  errorRowDisposition="FailComponent"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[loan_amt_lmt]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[loan_amt_lmt]"
+                                  name="loan_amt_lmt"
+                                  precision="20"
+                                  scale="4"
+                                  truncationRowDisposition="FailComponent">
+                                  <properties>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                                      name="FastParse">false</property>
+                                    <property
+                                      dataType="System.Boolean"
+                                      description="Indicates whether the data is in binary format."
+                                      name="UseBinaryFormat">false</property>
+                                  </properties>
+                                </outputColumn>
+                              </outputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[prod_id]"
+                                  dataType="i2"
+                                  name="prod_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[prod_code]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="10"
+                                  name="prod_code" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[prod_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="50"
+                                  name="prod_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[revolve_ind]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="1"
+                                  name="revolve_ind" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].ExternalColumns[loan_amt_lmt]"
+                                  dataType="numeric"
+                                  name="loan_amt_lmt"
+                                  precision="20"
+                                  scale="4" />
+                              </externalMetadataColumns>
+                            </output>
+                            <output
+                              refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Error Output]"
+                              isErrorOut="true"
+                              name="Flat File Source Error Output">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                                  codePage="1252"
+                                  dataType="text"
+                                  description="Flat File Source Error Output Column"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                                  name="Flat File Source Error Output Column" />
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                        <component
+                          refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES"
+                          componentClassID="Microsoft.OLEDBDestination"
+                          contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                          description="OLE DB Destination"
+                          name="stg_PRODUCT_PROFILES"
+                          usesDispositions="true"
+                          version="4">
+                          <properties>
+                            <property
+                              dataType="System.Int32"
+                              description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                              name="CommandTimeout">0</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the name of the database object used to open a rowset."
+                              name="OpenRowset">[stg].[PRODUCT_PROFILES]</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies the variable that contains the name of the database object used to open a rowset."
+                              name="OpenRowsetVariable"></property>
+                            <property
+                              dataType="System.String"
+                              description="The SQL command to be executed."
+                              name="SqlCommand"
+                              UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the column code page to use when code page information is unavailable from the data source."
+                              name="DefaultCodePage">1252</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Forces the use of the DefaultCodePage property value when describing character data."
+                              name="AlwaysUseDefaultCodePage">false</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies the mode used to access the database."
+                              name="AccessMode"
+                              typeConverter="AccessMode">3</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                              name="FastLoadKeepIdentity">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                              name="FastLoadKeepNulls">false</property>
+                            <property
+                              dataType="System.String"
+                              description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                              name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                            <property
+                              dataType="System.Int32"
+                              description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                              name="FastLoadMaxInsertCommitSize">2147483647</property>
+                          </properties>
+                          <connections>
+                            <connection
+                              refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Connections[OleDbConnection]"
+                              connectionManagerID="Package.ConnectionManagers[DFNB3]"
+                              connectionManagerRefId="Package.ConnectionManagers[DFNB3]"
+                              description="The OLE DB runtime connection used to access the database."
+                              name="OleDbConnection" />
+                          </connections>
+                          <inputs>
+                            <input
+                              refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input]"
+                              errorOrTruncationOperation="Insert"
+                              errorRowDisposition="FailComponent"
+                              hasSideEffects="true"
+                              name="OLE DB Destination Input">
+                              <inputColumns>
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].Columns[prod_id]"
+                                  cachedDataType="i2"
+                                  cachedName="prod_id"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[prod_id]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_id]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].Columns[prod_code]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="10"
+                                  cachedName="prod_code"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[prod_code]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_code]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].Columns[prod_desc]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="50"
+                                  cachedName="prod_desc"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[prod_desc]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[prod_desc]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].Columns[revolve_ind]"
+                                  cachedCodepage="1252"
+                                  cachedDataType="str"
+                                  cachedLength="1"
+                                  cachedName="revolve_ind"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[revolve_ind]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[revolve_ind]" />
+                                <inputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].Columns[loan_amt_lmt]"
+                                  cachedDataType="numeric"
+                                  cachedName="loan_amt_lmt"
+                                  cachedPrecision="20"
+                                  cachedScale="4"
+                                  externalMetadataColumnId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[loan_amt_lmt]"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output].Columns[loan_amt_lmt]" />
+                              </inputColumns>
+                              <externalMetadataColumns
+                                isUsed="True">
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[prod_id]"
+                                  dataType="i2"
+                                  name="prod_id" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[prod_code]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="10"
+                                  name="prod_code" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[prod_desc]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="50"
+                                  name="prod_desc" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[revolve_ind]"
+                                  codePage="1252"
+                                  dataType="str"
+                                  length="1"
+                                  name="revolve_ind" />
+                                <externalMetadataColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input].ExternalColumns[loan_amt_lmt]"
+                                  dataType="numeric"
+                                  name="loan_amt_lmt"
+                                  precision="20"
+                                  scale="4" />
+                              </externalMetadataColumns>
+                            </input>
+                          </inputs>
+                          <outputs>
+                            <output
+                              refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Outputs[OLE DB Destination Error Output]"
+                              exclusionGroup="1"
+                              isErrorOut="true"
+                              name="OLE DB Destination Error Output"
+                              synchronousInputId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input]">
+                              <outputColumns>
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                                  name="ErrorCode"
+                                  specialFlags="1" />
+                                <outputColumn
+                                  refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                                  dataType="i4"
+                                  lineageId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                                  name="ErrorColumn"
+                                  specialFlags="2" />
+                              </outputColumns>
+                              <externalMetadataColumns />
+                            </output>
+                          </outputs>
+                        </component>
+                      </components>
+                      <paths>
+                        <path
+                          refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data.Paths[Flat File Source Output]"
+                          endId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES.Inputs[OLE DB Destination Input]"
+                          name="Flat File Source Output"
+                          startId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv.Outputs[Flat File Source Output]" />
+                      </paths>
+                    </pipeline>
+                  </DTS:ObjectData>
+                </DTS:Executable>
+                <DTS:Executable
+                  DTS:refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Truncate data"
+                  DTS:CreationName="Microsoft.ExecuteSQLTask"
+                  DTS:Description="Execute SQL Task"
+                  DTS:DTSID="{4754E803-D61A-40FA-8D6F-E016BB3BE726}"
+                  DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+                  DTS:LocaleID="-1"
+                  DTS:ObjectName="Truncate data"
+                  DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+                  DTS:ThreadHint="2">
+                  <DTS:Variables />
+                  <DTS:ObjectData>
+                    <SQLTask:SqlTaskData
+                      SQLTask:Connection="{EA29BB6C-0248-459C-B966-AE48B0D42F36}"
+                      SQLTask:SqlStatementSource="TRUNCATE TABLE stg.PRODUCT_PROFILES;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+                  </DTS:ObjectData>
+                </DTS:Executable>
+              </DTS:Executables>
+              <DTS:PrecedenceConstraints>
+                <DTS:PrecedenceConstraint
+                  DTS:refId="Package\Parent Container\Reload raw data - Flat File\Product Profiles.PrecedenceConstraints[Constraint]"
+                  DTS:CreationName=""
+                  DTS:DTSID="{74CD2422-6AAA-4EA7-8B53-50F720977A46}"
+                  DTS:From="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Truncate data"
+                  DTS:LogicalAnd="True"
+                  DTS:ObjectName="Constraint"
+                  DTS:To="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data" />
+              </DTS:PrecedenceConstraints>
+            </DTS:Executable>
+            <DTS:Executable
               DTS:refId="Package\Parent Container\Reload raw data - Flat File\Truncate data"
               DTS:CreationName="Microsoft.ExecuteSQLTask"
               DTS:Description="Execute SQL Task"
+              DTS:Disabled="True"
               DTS:DTSID="{6DE77B6E-186E-4054-9B1D-FA2818BFDCD2}"
               DTS:ExecutableType="Microsoft.ExecuteSQLTask"
               DTS:LocaleID="-1"
@@ -31353,6 +32467,22 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
       </DTS:Executables>
       <DTS:PrecedenceConstraints>
         <DTS:PrecedenceConstraint
+          DTS:refId="Package\Parent Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{A7B5E38C-539B-457A-B762-460627436018}"
+          DTS:From="Package\Parent Container\Reload raw data - Flat File"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Parent Container\Num" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Parent Container.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{13EE3D83-2F57-44BF-AB39-CF9D3A563275}"
+          DTS:From="Package\Parent Container\Reload raw data - Flat File"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Parent Container\Branch Tran file breakout" />
+        <DTS:PrecedenceConstraint
           DTS:refId="Package\Parent Container.PrecedenceConstraints[Constraint 2]"
           DTS:CreationName=""
           DTS:DTSID="{8F7D8FF0-FF45-42B4-8FE5-7B2EF09C508C}"
@@ -31368,6 +32498,14 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 3"
           DTS:To="Package\Parent Container\Data Profiling Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Parent Container.PrecedenceConstraints[Constraint 4]"
+          DTS:CreationName=""
+          DTS:DTSID="{326A7D3F-D148-4A86-B9C6-0F7DDF764F3A}"
+          DTS:From="Package\Parent Container\Num"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 4"
+          DTS:To="Package\Parent Container\Load dimensions" />
       </DTS:PrecedenceConstraints>
     </DTS:Executable>
     <DTS:Executable
@@ -31777,6 +32915,113 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
               ReadOnlyVariables="System::VariableValue"
               ReadWriteVariables="User::strVariableValue">
               <ProjectItem
+                Name="My Project\AssemblyInfo.vb"
+                Encoding="UTF8"><![CDATA[Imports System
+Imports System.Reflection
+Imports System.Runtime.InteropServices
+
+' General Information about an assembly is controlled through the following 
+' set of attributes. Change these attribute values to modify the information
+' associated with an assembly.
+
+' Review the values of the assembly attributes
+
+<Assembly: AssemblyTitle("ST_c1d5b58b10794369aa7ee255036edb32")> 
+<Assembly: AssemblyDescription("")> 
+<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyProduct("ST_c1d5b58b10794369aa7ee255036edb32")> 
+<Assembly: AssemblyCopyright("Copyright @  2021")> 
+<Assembly: AssemblyTrademark("")> 
+<Assembly: CLSCompliant(True)> 
+
+<Assembly: ComVisible(False)> 
+
+'The following GUID is for the ID of the typelib if this project is exposed to COM
+<Assembly: Guid("5d868c0f-e655-422a-8edc-73f43ebe46d5")> 
+
+' Version information for an assembly consists of the following four values:
+'
+'      Major Version
+'      Minor Version 
+'      Build Number
+'      Revision
+'
+' You can specify all the values or you can default the Build and Revision Numbers 
+' by using the '*' as shown below:
+' <Assembly: AssemblyVersion("1.0.*")>
+
+<Assembly: AssemblyVersion("1.0.0.0")> 
+<Assembly: AssemblyFileVersion("1.0.0.0")> ]]></ProjectItem>
+              <ProjectItem
+                Name="My Project\Settings.settings"
+                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
+<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname" GeneratedClassName="MySettings">
+  <Profiles>
+    <Profile Name="(Default)" />
+  </Profiles>
+  <Settings />
+</SettingsFile>]]></ProjectItem>
+              <ProjectItem
+                Name="My Project\Settings.Designer.vb"
+                Encoding="UTF8"><![CDATA['------------------------------------------------------------------------------
+' <autogenerated>
+'     This code was generated by a tool.
+'
+'     Changes to this file may cause incorrect behavior and will be lost if
+'     the code is regenerated.
+' </autogenerated>
+'------------------------------------------------------------------------------
+
+Option Strict Off
+Option Explicit On
+
+
+
+Partial Friend NotInheritable Class MySettings
+    Inherits System.Configuration.ApplicationSettingsBase
+
+    Private Shared m_Value As MySettings
+
+    Private Shared m_SyncObject As Object = New Object
+
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Public Shared ReadOnly Property Value() As MySettings
+        Get
+            If (MySettings.m_Value Is Nothing) Then
+                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
+                If (MySettings.m_Value Is Nothing) Then
+                    Try
+                        MySettings.m_Value = New MySettings
+                    Finally
+                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
+                    End Try
+                End If
+            End If
+            Return MySettings.m_Value
+        End Get
+    End Property
+End Class]]></ProjectItem>
+              <ProjectItem
+                Name="Project"
+                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
+<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
+  <msb:PropertyGroup>
+    <msb:CodeName>ST_c1d5b58b10794369aa7ee255036edb32</msb:CodeName>
+    <msb:Language>msBuild</msb:Language>
+    <msb:DisplayName>ST_c1d5b58b10794369aa7ee255036edb32</msb:DisplayName>
+    <msb:ProjectId>{EF759B12-2B49-4634-B44F-8D2CD94AD6C5}</msb:ProjectId>
+  </msb:PropertyGroup>
+  <msb:ItemGroup>
+    <msb:Project Include="ST_c1d5b58b10794369aa7ee255036edb32.vbproj" />
+    <msb:File Include="My Project\Settings.Designer.vb" />
+    <msb:File Include="My Project\AssemblyInfo.vb" />
+    <msb:File Include="ScriptMain.vb" />
+    <msb:File Include="My Project\Resources.resx" />
+    <msb:File Include="My Project\Resources.Designer.vb" />
+    <msb:File Include="My Project\Settings.settings" />
+  </msb:ItemGroup>
+</c:Project>]]></ProjectItem>
+              <ProjectItem
                 Name="ScriptMain.vb"
                 Encoding="UTF8"><![CDATA[#Region "Help:  Introduction to the script task"
 'The Script Task allows you to perform virtually any operation that can be accomplished in
@@ -31884,213 +33129,6 @@ Partial Public Class ScriptMain
 #End Region
 
 End Class]]></ProjectItem>
-              <ProjectItem
-                Name="My Project\Settings.settings"
-                Encoding="UTF8"><![CDATA[<?xml version='1.0' encoding='iso-8859-1'?>
-<SettingsFile xmlns="uri:settings" CurrentProfile="(Default)" GeneratedClassNamespace="$safeprojectname" GeneratedClassName="MySettings">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
-</SettingsFile>]]></ProjectItem>
-              <ProjectItem
-                Name="ST_c1d5b58b10794369aa7ee255036edb32.vbproj"
-                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.30703</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{44E953CA-62B4-4040-9887-8375DA99300B}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>My Project</AppDesignerFolder>
-    <RootNamespace>ST_c1d5b58b10794369aa7ee255036edb32</RootNamespace>
-    <AssemblyName>ST_c1d5b58b10794369aa7ee255036edb32</AssemblyName>
-    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-    <TargetFrameworkProfile></TargetFrameworkProfile>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>.\bin\Debug\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineDebug>true</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <DebugSymbols>false</DebugSymbols>
-    <Optimize>true</Optimize>
-    <OutputPath>.\bin\Release\</OutputPath>
-    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
-    <DefineDebug>false</DefineDebug>
-    <DefineTrace>true</DefineTrace>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
-  </ItemGroup>
-  <ItemGroup>
-    <Import Include="Microsoft.VisualBasic" />
-    <Import Include="System" />
-    <Import Include="System.Collections" />
-    <Import Include="System.Data" />
-    <Import Include="System.Diagnostics" />
-    <Import Include="System.Windows.Forms" />
-  </ItemGroup>
-  <ItemGroup>
-    <AppDesigner Include="My Project\" />
-    <Compile Include="My Project\AssemblyInfo.vb">
-      <SubType>Code</SubType>
-    </Compile>
-    <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
-      <CustomToolNamespace>My.Resources</CustomToolNamespace>
-    </EmbeddedResource>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <None Include="My Project\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
-    </None>
-    <Compile Include="My Project\Settings.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ScriptMain.vb">
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <!-- Include the build rules for a VB project.-->
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
-  <ProjectExtensions>
-    <VisualStudio>
-      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
-        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="vb" TemplatesPath="" />
-        <Host Name="ScriptTask" />
-        <ProjectClient>
-          <HostIdentifier>SSIS_ST150</HostIdentifier>
-        </ProjectClient>
-      </FlavorProperties>
-    </VisualStudio>
-  </ProjectExtensions>
-</Project>]]></ProjectItem>
-              <ProjectItem
-                Name="My Project\AssemblyInfo.vb"
-                Encoding="UTF8"><![CDATA[Imports System
-Imports System.Reflection
-Imports System.Runtime.InteropServices
-
-' General Information about an assembly is controlled through the following 
-' set of attributes. Change these attribute values to modify the information
-' associated with an assembly.
-
-' Review the values of the assembly attributes
-
-<Assembly: AssemblyTitle("ST_c1d5b58b10794369aa7ee255036edb32")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("ST_c1d5b58b10794369aa7ee255036edb32")> 
-<Assembly: AssemblyCopyright("Copyright @  2021")> 
-<Assembly: AssemblyTrademark("")> 
-<Assembly: CLSCompliant(True)> 
-
-<Assembly: ComVisible(False)> 
-
-'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("5d868c0f-e655-422a-8edc-73f43ebe46d5")> 
-
-' Version information for an assembly consists of the following four values:
-'
-'      Major Version
-'      Minor Version 
-'      Build Number
-'      Revision
-'
-' You can specify all the values or you can default the Build and Revision Numbers 
-' by using the '*' as shown below:
-' <Assembly: AssemblyVersion("1.0.*")>
-
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> ]]></ProjectItem>
-              <ProjectItem
-                Name="My Project\Settings.Designer.vb"
-                Encoding="UTF8"><![CDATA['------------------------------------------------------------------------------
-' <autogenerated>
-'     This code was generated by a tool.
-'
-'     Changes to this file may cause incorrect behavior and will be lost if
-'     the code is regenerated.
-' </autogenerated>
-'------------------------------------------------------------------------------
-
-Option Strict Off
-Option Explicit On
-
-
-
-Partial Friend NotInheritable Class MySettings
-    Inherits System.Configuration.ApplicationSettingsBase
-
-    Private Shared m_Value As MySettings
-
-    Private Shared m_SyncObject As Object = New Object
-
-    <System.Diagnostics.DebuggerNonUserCode()> _
-    Public Shared ReadOnly Property Value() As MySettings
-        Get
-            If (MySettings.m_Value Is Nothing) Then
-                System.Threading.Monitor.Enter(MySettings.m_SyncObject)
-                If (MySettings.m_Value Is Nothing) Then
-                    Try
-                        MySettings.m_Value = New MySettings
-                    Finally
-                        System.Threading.Monitor.Exit(MySettings.m_SyncObject)
-                    End Try
-                End If
-            End If
-            Return MySettings.m_Value
-        End Get
-    End Property
-End Class]]></ProjectItem>
-              <ProjectItem
-                Name="Project"
-                Encoding="UTF16LE"><![CDATA[<?xml version="1.0" encoding="UTF-16" standalone="yes"?>
-<c:Project xmlns:c="http://schemas.microsoft.com/codeprojectml/2010/08/main" xmlns:msb="http://schemas.microsoft.com/developer/msbuild/2003" runtimeVersion="4.0" schemaVersion="1.0">
-  <msb:PropertyGroup>
-    <msb:CodeName>ST_c1d5b58b10794369aa7ee255036edb32</msb:CodeName>
-    <msb:Language>msBuild</msb:Language>
-    <msb:DisplayName>ST_c1d5b58b10794369aa7ee255036edb32</msb:DisplayName>
-    <msb:ProjectId>{EF759B12-2B49-4634-B44F-8D2CD94AD6C5}</msb:ProjectId>
-  </msb:PropertyGroup>
-  <msb:ItemGroup>
-    <msb:Project Include="ST_c1d5b58b10794369aa7ee255036edb32.vbproj" />
-    <msb:File Include="My Project\Settings.Designer.vb" />
-    <msb:File Include="My Project\AssemblyInfo.vb" />
-    <msb:File Include="ScriptMain.vb" />
-    <msb:File Include="My Project\Resources.resx" />
-    <msb:File Include="My Project\Resources.Designer.vb" />
-    <msb:File Include="My Project\Settings.settings" />
-  </msb:ItemGroup>
-</c:Project>]]></ProjectItem>
               <ProjectItem
                 Name="My Project\Resources.resx"
                 Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
@@ -32273,6 +33311,106 @@ Namespace My.Resources
         End Property
     End Class
 End Namespace]]></ProjectItem>
+              <ProjectItem
+                Name="ST_c1d5b58b10794369aa7ee255036edb32.vbproj"
+                Encoding="UTF8"><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectTypeGuids>{30D016F9-3734-4E33-A861-5E7D899E18F3};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44E953CA-62B4-4040-9887-8375DA99300B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>My Project</AppDesignerFolder>
+    <RootNamespace>ST_c1d5b58b10794369aa7ee255036edb32</RootNamespace>
+    <AssemblyName>ST_c1d5b58b10794369aa7ee255036edb32</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
+    <TargetFrameworkProfile></TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.SqlServer.ManagedDTS, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.SqlServer.ScriptTask, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="My Project\" />
+    <Compile Include="My Project\AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScriptMain.vb">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <!-- Include the build rules for a VB project.-->
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{30D016F9-3734-4E33-A861-5E7D899E18F3}">
+        <ProjectProperties HostName="VSTAHostName" HostPackage="{B3A685AA-7EAF-4BC6-9940-57959FA5AC07}" ApplicationType="usd" Language="vb" TemplatesPath="" />
+        <Host Name="ScriptTask" />
+        <ProjectClient>
+          <HostIdentifier>SSIS_ST150</HostIdentifier>
+        </ProjectClient>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>]]></ProjectItem>
               <BinaryItem
                 Name="ST_c1d5b58b10794369aa7ee255036edb32.dll">TVqQAAMAAAAEAAAA//8AALgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAgAAAAA4fug4AtAnNIbgBTM0hVGhpcyBwcm9ncmFtIGNhbm5vdCBiZSBydW4gaW4gRE9TIG1v
@@ -32512,368 +33650,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           PanelSize="761.333333333334,382.666666666667"
           Size="182.666666666667,42.6666666666667"
           Id="Package\Documentation"
-          TopLeft="116.166666666667,828.166666666667" />
-        <NodeLayout
-          Size="169.333333333334,42.6666666666667"
-          Id="Package\Parent Container\Data Profiling Task"
-          TopLeft="285.166666666667,313.833333333333" />
-        <NodeLayout
-          Size="218.666666666667,42.6666666666667"
-          Id="Package\Parent Container\LoadNAICSCodeHierDim_wc"
-          TopLeft="5.50000000000004,313.833333333333" />
-        <NodeLayout
-          Size="112,42.6666666666667"
-          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container\stg_p1"
-          TopLeft="44.1666666666667,108.166666666667" />
-        <NodeLayout
-          Size="189.333333333334,42.6666666666667"
-          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container\MsgBox check variable"
-          TopLeft="5.50000000000001,5.50000000000004" />
-        <EdgeLayout
-          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container.PrecedenceConstraints[Constraint]"
-          TopLeft="100.166666666667,48.1666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="200.666666666667,206"
-          Size="200.666666666667,249.333333333334"
-          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container"
-          TopLeft="192.5,108.166666666667" />
-        <NodeLayout
-          Size="126.666666666667,42.6666666666667"
-          Id="Package\Parent Container\Reload raw data - Flat File\Load data"
-          TopLeft="5.50000000000001,211.5" />
-        <NodeLayout
-          Size="145.333333333334,42.6666666666667"
-          Id="Package\Parent Container\Reload raw data - Flat File\Truncate data"
-          TopLeft="220.166666666667,5.50000000000004" />
-        <EdgeLayout
-          Id="Package\Parent Container\Reload raw data - Flat File.PrecedenceConstraints[Constraint]"
-          TopLeft="269.944444444444,48.1666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-201.111111111111,163.333333333333"
-              Start="0,0"
-              End="-201.111111111111,155.833333333333">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,62.4004839685421" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,62.4004839685421"
-                    Point2="0,66.4004839685421"
-                    Point3="-4,66.4004839685421" />
-                  <mssgle:LineSegment
-                    End="-197.111111111111,66.4004839685421" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-197.111111111111,66.4004839685421"
-                    Point2="-201.111111111111,66.4004839685421"
-                    Point3="-201.111111111111,70.4004839685421" />
-                  <mssgle:LineSegment
-                    End="-201.111111111111,155.833333333333" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-108.555555555556,71.4004839685421,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parent Container\Reload raw data - Flat File.PrecedenceConstraints[Constraint 1]"
-          TopLeft="315.722222222222,48.1666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-22.8888888888888,60.0000000000001"
-              Start="0,0"
-              End="-22.8888888888888,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.3920145190563" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.3920145190563"
-                    Point2="0,24.3920145190563"
-                    Point3="-4,24.3920145190563" />
-                  <mssgle:LineSegment
-                    End="-18.8888888888888,24.3920145190563" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.8888888888888,24.3920145190563"
-                    Point2="-22.8888888888888,24.3920145190563"
-                    Point3="-22.8888888888888,28.3920145190563" />
-                  <mssgle:LineSegment
-                    End="-22.8888888888888,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-19.4444444444444,29.3920145190563,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="398.666666666667,412.666666666667"
-          Size="398.666666666667,42.6666666666667"
-          Id="Package\Parent Container\Reload raw data - Flat File"
-          TopLeft="170.5,5.49999999999993" />
-        <EdgeLayout
-          Id="Package\Parent Container.PrecedenceConstraints[Constraint 2]"
-          TopLeft="304.722222222222,48.1666666666666">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-189.888888888889,265.666666666667"
-              Start="0,0"
-              End="-189.888888888889,258.166666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,102.903841883189" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,102.903841883189"
-                    Point2="0,106.903841883189"
-                    Point3="-4,106.903841883189" />
-                  <mssgle:LineSegment
-                    End="-185.888888888889,106.903841883189" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-185.888888888889,106.903841883189"
-                    Point2="-189.888888888889,106.903841883189"
-                    Point3="-189.888888888889,110.903841883189" />
-                  <mssgle:LineSegment
-                    End="-189.888888888889,258.166666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parent Container.PrecedenceConstraints[Constraint 3]"
-          TopLeft="434.944444444444,48.1666666666666">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-65.1111111111111,265.666666666667"
-              Start="0,0"
-              End="-65.1111111111111,258.166666666667">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,102.903841883189" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,102.903841883189"
-                    Point2="0,106.903841883189"
-                    Point3="-4,106.903841883189" />
-                  <mssgle:LineSegment
-                    End="-61.1111111111111,106.903841883189" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-61.1111111111111,106.903841883189"
-                    Point2="-65.1111111111111,106.903841883189"
-                    Point3="-65.1111111111111,110.903841883189" />
-                  <mssgle:LineSegment
-                    End="-65.1111111111111,258.166666666667" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="134,42.6666666666667"
-          Id="Package\Parent Container\Num\Load Nums"
-          TopLeft="260.833333333333,1.42982679368828" />
-        <EdgeLayout
-          Id="Package\Parent Container\Num.PrecedenceConstraints[Constraint]"
-          TopLeft="306.833333333333,44.0964934603549">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-214,60.0000000000001"
-              Start="0,0"
-              End="-214,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.4247787610619" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.4247787610619"
-                    Point2="0,24.4247787610619"
-                    Point3="-4,24.4247787610619" />
-                  <mssgle:LineSegment
-                    End="-210,24.4247787610619" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-210,24.4247787610619"
-                    Point2="-214,24.4247787610619"
-                    Point3="-214,28.4247787610619" />
-                  <mssgle:LineSegment
-                    End="-214,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-115,29.4247787610619,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Parent Container\Num.PrecedenceConstraints[Constraint 1]"
-          TopLeft="348.833333333333,44.0964934603549">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-21,60.0000000000001"
-              Start="0,0"
-              End="-21,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,20.4247787610619" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,20.4247787610619"
-                    Point2="0,24.4247787610619"
-                    Point3="-4,24.4247787610619" />
-                  <mssgle:LineSegment
-                    End="-17,24.4247787610619" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-17,24.4247787610619"
-                    Point2="-21,24.4247787610619"
-                    Point3="-21,28.4247787610619" />
-                  <mssgle:LineSegment
-                    End="-21,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-18.5,29.4247787610619,16,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM"
-          TopLeft="5.50000000000001,108.166666666667" />
-        <NodeLayout
-          Size="152,42.6666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Truncate Nums"
-          TopLeft="11.5,5.50000000000004" />
-        <EdgeLayout
-          Id="Package\Parent Container\Num\Reload Nums - OLE_DB.PrecedenceConstraints[Constraint]"
-          TopLeft="87.5,48.1666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="174.666666666667,206"
-          Size="174.666666666667,248.666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - OLE_DB"
-          TopLeft="5.5,104.096493460355" />
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM"
-          TopLeft="5.50000000000001,108.166666666667" />
-        <NodeLayout
-          Size="152,42.6666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Truncate Nums"
-          TopLeft="11.5,5.50000000000004" />
-        <EdgeLayout
-          Id="Package\Parent Container\Num\Reload Nums - ADO NET.PrecedenceConstraints[Constraint]"
-          TopLeft="87.5,48.1666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60.0000000000001"
-              Start="0,0"
-              End="0,52.5000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="174.666666666667,206"
-          Size="174.666666666667,248.666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - ADO NET"
-          TopLeft="240.5,104.096493460355" />
-        <ContainerLayout
-          HeaderHeight="43"
-          IsExpanded="False"
-          PanelSize="420,408"
-          Size="124.666666666667,42.6666666666667"
-          Id="Package\Parent Container\Num"
-          TopLeft="515.5,313.833333333333" />
-        <NodeLayout
-          Size="146.666666666667,42.6666666666667"
-          Id="Package\Parent Container\Branch Tran file breakout\Tran Year List"
-          TopLeft="18.5,5.50000000000004" />
+          TopLeft="264.166666666667,1034.83333333333" />
         <NodeLayout
           Size="153.333333333334,42"
           Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task"
@@ -32911,6 +33688,10 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           Size="172.666666666667,248"
           Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container"
           TopLeft="5.50000000000004,108.166666666667" />
+        <NodeLayout
+          Size="146.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Branch Tran file breakout\Tran Year List"
+          TopLeft="18.5,5.50000000000004" />
         <EdgeLayout
           Id="Package\Parent Container\Branch Tran file breakout.PrecedenceConstraints[Constraint]"
           TopLeft="91.8333333333334,48.1666666666667">
@@ -32935,40 +33716,576 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
-          IsExpanded="True"
-          PanelSize="183.333333333334,411.333333333334"
-          Size="183.333333333334,454"
+          IsExpanded="False"
+          PanelSize="183.333333333334,410.666666666667"
+          Size="183.333333333334,42.6666666666667"
           Id="Package\Parent Container\Branch Tran file breakout"
-          TopLeft="701.166666666667,108.166666666667" />
+          TopLeft="997.166666666667,520.166666666667" />
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\Parent Container\Data Profiling Task"
+          TopLeft="285.166666666667,520.166666666667" />
+        <NodeLayout
+          Size="218.666666666667,42.6666666666667"
+          Id="Package\Parent Container\LoadNAICSCodeHierDim_wc"
+          TopLeft="5.50000000000004,520.166666666667" />
+        <NodeLayout
+          Size="134,42.6666666666667"
+          Id="Package\Parent Container\Num\Load Nums"
+          TopLeft="260.833333333333,5.50000000000004" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM"
+          TopLeft="5.50000000000001,108.166666666667" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Truncate Nums"
+          TopLeft="11.5,5.50000000000004" />
+        <EdgeLayout
+          Id="Package\Parent Container\Num\Reload Nums - ADO NET.PrecedenceConstraints[Constraint]"
+          TopLeft="87.5,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,26.25,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="890,617.333333333334"
-          Size="890,660"
+          PanelSize="174.666666666667,206"
+          Size="174.666666666667,248.666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - ADO NET"
+          TopLeft="240.5,108.166666666667" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM"
+          TopLeft="5.50000000000001,108.166666666667" />
+        <NodeLayout
+          Size="152,42.6666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Truncate Nums"
+          TopLeft="11.5,5.50000000000004" />
+        <EdgeLayout
+          Id="Package\Parent Container\Num\Reload Nums - OLE_DB.PrecedenceConstraints[Constraint]"
+          TopLeft="87.5,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,26.25,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="174.666666666667,206"
+          Size="174.666666666667,248.666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - OLE_DB"
+          TopLeft="5.50000000000007,108.166666666667" />
+        <EdgeLayout
+          Id="Package\Parent Container\Num.PrecedenceConstraints[Constraint]"
+          TopLeft="306.833333333333,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-214,60.0000000000001"
+              Start="0,0"
+              End="-214,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.424778761062" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.424778761062"
+                    Point2="0,24.424778761062"
+                    Point3="-4,24.424778761062" />
+                  <mssgle:LineSegment
+                    End="-210,24.424778761062" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-210,24.424778761062"
+                    Point2="-214,24.424778761062"
+                    Point3="-214,28.424778761062" />
+                  <mssgle:LineSegment
+                    End="-214,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-115,29.424778761062,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parent Container\Num.PrecedenceConstraints[Constraint 1]"
+          TopLeft="348.833333333333,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-20.9999999999999,60.0000000000001"
+              Start="0,0"
+              End="-20.9999999999999,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.424778761062" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.424778761062"
+                    Point2="0,24.424778761062"
+                    Point3="-4,24.424778761062" />
+                  <mssgle:LineSegment
+                    End="-16.9999999999999,24.424778761062" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-16.9999999999999,24.424778761062"
+                    Point2="-20.9999999999999,24.424778761062"
+                    Point3="-20.9999999999999,28.424778761062" />
+                  <mssgle:LineSegment
+                    End="-20.9999999999999,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-18.5,29.424778761062,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="False"
+          PanelSize="420.666666666667,412"
+          Size="420.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Num"
+          TopLeft="515.5,520.166666666667" />
+        <NodeLayout
+          Size="189.333333333334,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container\MsgBox check variable"
+          TopLeft="5.50000000000001,5.50000000000004" />
+        <NodeLayout
+          Size="112,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container\stg_p1"
+          TopLeft="44.1666666666667,108.166666666667" />
+        <EdgeLayout
+          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container.PrecedenceConstraints[Constraint]"
+          TopLeft="100.166666666667,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="200.666666666667,206"
+          Size="200.666666666667,248.666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container"
+          TopLeft="192.5,108.166666666667" />
+        <NodeLayout
+          Size="126.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Load data"
+          TopLeft="5.50000000000004,211.166666666667" />
+        <NodeLayout
+          Size="145.333333333334,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Truncate data"
+          TopLeft="220.166666666667,5.49999999999993" />
+        <EdgeLayout
+          Id="Package\Parent Container\Reload raw data - Flat File.PrecedenceConstraints[Constraint]"
+          TopLeft="269.944444444444,48.1666666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-201.111111111111,163"
+              Start="0,0"
+              End="-201.111111111111,155.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,62.2649727767696" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,62.2649727767696"
+                    Point2="0,66.2649727767696"
+                    Point3="-4,66.2649727767696" />
+                  <mssgle:LineSegment
+                    End="-197.111111111111,66.2649727767696" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-197.111111111111,66.2649727767696"
+                    Point2="-201.111111111111,66.2649727767696"
+                    Point3="-201.111111111111,70.2649727767696" />
+                  <mssgle:LineSegment
+                    End="-201.111111111111,155.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-108.555555555556,71.2649727767696,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parent Container\Reload raw data - Flat File.PrecedenceConstraints[Constraint 1]"
+          TopLeft="315.722222222222,48.1666666666666">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-22.8888888888888,60.0000000000001"
+              Start="0,0"
+              End="-22.8888888888888,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.3920145190563" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.3920145190563"
+                    Point2="0,24.3920145190563"
+                    Point3="-4,24.3920145190563" />
+                  <mssgle:LineSegment
+                    End="-18.8888888888888,24.3920145190563" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-18.8888888888888,24.3920145190563"
+                    Point2="-22.8888888888888,24.3920145190563"
+                    Point3="-22.8888888888888,28.3920145190563" />
+                  <mssgle:LineSegment
+                    End="-22.8888888888888,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-19.4444444444444,29.3920145190563,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="145.333333333334,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Truncate data"
+          TopLeft="5.50000000000001,5.50000000000004" />
+        <NodeLayout
+          Size="126.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data"
+          TopLeft="14.8333333333333,108.166666666667" />
+        <EdgeLayout
+          Id="Package\Parent Container\Reload raw data - Flat File\Product Profiles.PrecedenceConstraints[Constraint]"
+          TopLeft="78.1666666666667,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="156.666666666667,206"
+          Size="156.666666666667,248.666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Product Profiles"
+          TopLeft="453.5,108.166666666667" />
+        <NodeLayout
+          Size="126.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data"
+          TopLeft="14.8333333333333,108.166666666667" />
+        <NodeLayout
+          Size="145.333333333334,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Truncate data"
+          TopLeft="5.50000000000001,5.50000000000004" />
+        <EdgeLayout
+          Id="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy.PrecedenceConstraints[Constraint]"
+          TopLeft="78.1666666666667,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="156.666666666667,206"
+          Size="156.666666666667,248.666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy"
+          TopLeft="670.5,108.166666666667" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="832.666666666667,412"
+          Size="832.666666666667,454.666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File"
+          TopLeft="309.5,5.49999999999991" />
+        <EdgeLayout
+          Id="Package\Parent Container.PrecedenceConstraints[Constraint 2]"
+          TopLeft="478.433333333333,460.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-363.6,60.0000000000002"
+              Start="0,0"
+              End="-363.6,52.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.3186012074269" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.3186012074269"
+                    Point2="0,17.3186012074269"
+                    Point3="-4,17.3186012074269" />
+                  <mssgle:LineSegment
+                    End="-359.6,17.3186012074269" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-359.6,17.3186012074269"
+                    Point2="-363.6,17.3186012074269"
+                    Point3="-363.6,21.3186012074269" />
+                  <mssgle:LineSegment
+                    End="-363.6,52.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parent Container.PrecedenceConstraints[Constraint 3]"
+          TopLeft="643.366666666667,460.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-273.533333333333,60.0000000000002"
+              Start="0,0"
+              End="-273.533333333333,52.5000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.7022127432686" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.7022127432686"
+                    Point2="0,26.7022127432686"
+                    Point3="-4,26.7022127432686" />
+                  <mssgle:LineSegment
+                    End="-269.533333333333,26.7022127432686" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-269.533333333333,26.7022127432686"
+                    Point2="-273.533333333333,26.7022127432686"
+                    Point3="-273.533333333333,30.7022127432686" />
+                  <mssgle:LineSegment
+                    End="-273.533333333333,52.5000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parent Container.PrecedenceConstraints[Constraint]"
+          TopLeft="808.3,460.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-82.4666666666666,60.0000000000001"
+              Start="0,0"
+              End="-82.4666666666666,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.7022127432685" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.7022127432685"
+                    Point2="0,26.7022127432685"
+                    Point3="-4,26.7022127432685" />
+                  <mssgle:LineSegment
+                    End="-78.4666666666666,26.7022127432685" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-78.4666666666666,26.7022127432685"
+                    Point2="-82.4666666666666,26.7022127432685"
+                    Point3="-82.4666666666666,30.7022127432685" />
+                  <mssgle:LineSegment
+                    End="-82.4666666666666,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Parent Container.PrecedenceConstraints[Constraint 1]"
+          TopLeft="973.233333333333,460.166666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="115.6,60.0000000000001"
+              Start="0,0"
+              End="115.6,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,13.3186012074268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,13.3186012074268"
+                    Point2="0,17.3186012074268"
+                    Point3="4,17.3186012074268" />
+                  <mssgle:LineSegment
+                    End="111.6,17.3186012074268" />
+                  <mssgle:CubicBezierSegment
+                    Point1="111.6,17.3186012074268"
+                    Point2="115.6,17.3186012074268"
+                    Point3="115.6,21.3186012074268" />
+                  <mssgle:LineSegment
+                    End="115.6,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="150.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Load dimensions\Load Date Dim"
+          TopLeft="5.5,5.50000000000004" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="162,103.333333333334"
+          Size="162,146"
+          Id="Package\Parent Container\Load dimensions"
+          TopLeft="644.833333333333,622.833333333333" />
+        <EdgeLayout
+          Id="Package\Parent Container.PrecedenceConstraints[Constraint 4]"
+          TopLeft="725.833333333333,562.833333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="1186,824"
+          Size="1186,866.666666666667"
           Id="Package\Parent Container"
           TopLeft="5.50000000000011,108.166666666667" />
         <NodeLayout
           Size="182.666666666667,42.6666666666667"
           Id="Package\SQL LogPackageEnd"
-          TopLeft="359.166666666667,828.166666666667" />
+          TopLeft="507.166666666667,1034.83333333333" />
         <NodeLayout
           Size="185.333333333334,42.6666666666667"
           Id="Package\SQL LogPackageStart"
-          TopLeft="357.833333333333,5.49999999999993" />
+          TopLeft="505.833333333333,5.49999999999993" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="450.5,48.1666666666666">
+          TopLeft="598.5,48.1666666666666">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.9999999999999"
+              EndConnector="0,60.0000000000001"
               Start="0,0"
-              End="0,52.4999999999999">
+              End="0,52.5000000000001">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.4999999999999" />
+                    End="0,52.5000000000001" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -32979,7 +34296,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="450.5,768.166666666667">
+          TopLeft="598.5,974.833333333333">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -33079,10 +34396,138 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </LayoutInfo>
   </DtsEventHandler>
   <TaskHost
+    design-time-name="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="154.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task\OLE DB Source"
+          TopLeft="14.8333333333334,5.50000000000004" />
+        <NodeLayout
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task\Flat File Destination"
+          TopLeft="5.50000000000001,108.166666666667" />
+        <EdgeLayout
+          Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="92.1666666666667,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM\OLE DB Destination"
+          TopLeft="5.50000000000001,108.166666666667" />
+        <NodeLayout
+          Size="164,42.6666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM\ADO NET Source"
+          TopLeft="10.8333333333333,5.50000000000004" />
+        <EdgeLayout
+          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM.Paths[ADO NET Source Output]"
+          TopLeft="92.8333333333333,48.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
+    design-time-name="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM\OLE DB Destination"
+          TopLeft="5.50000000000001,108.833333333333" />
+        <NodeLayout
+          Size="154.666666666667,43.3333333333334"
+          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM\OLE DB Source"
+          TopLeft="15.5,5.49999999999996" />
+        <EdgeLayout
+          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM.Paths[OLE DB Source Output]"
+          TopLeft="92.8333333333333,48.8333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <TaskHost
     design-time-name="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container\stg_p1">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="148,42.6666666666667"
           Id="Package\Parent Container\Reload raw data - Flat File\Foreach Loop Container\stg_p1\stg_p1_bN_txt"
@@ -33110,7 +34555,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -33133,7 +34580,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     design-time-name="Package\Parent Container\Reload raw data - Flat File\Load data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="129.333333333334,42.6666666666667"
           Id="Package\Parent Container\Reload raw data - Flat File\Load data\stg_p2_txt"
@@ -33217,7 +34664,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33251,7 +34700,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33285,7 +34736,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33319,7 +34772,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33353,7 +34808,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33387,7 +34844,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33409,7 +34868,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33443,7 +34904,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33477,7 +34940,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33511,7 +34976,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33545,7 +35012,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33579,7 +35048,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33613,7 +35084,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -33635,7 +35108,9 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -33668,61 +35143,21 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM">
+    design-time-name="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM\OLE DB Destination"
-          TopLeft="5.50000000000001,108.833333333333" />
+          Size="173.333333333334,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\Product Profiles csv"
+          TopLeft="24.1666666666667,5.50000000000004" />
         <NodeLayout
-          Size="154.666666666667,43.3333333333334"
-          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM\OLE DB Source"
-          TopLeft="15.5,5.49999999999996" />
-        <EdgeLayout
-          Id="Package\Parent Container\Num\Reload Nums - OLE_DB\Reload from EXM.Paths[OLE DB Source Output]"
-          TopLeft="92.8333333333333,48.8333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,60"
-              Start="0,0"
-              End="0,52.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,52.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <TaskHost
-    design-time-name="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM\ADO NET Source"
-          TopLeft="10.8333333333333,5.50000000000004" />
-        <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM\OLE DB Destination"
+          Size="210.666666666667,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data\stg_PRODUCT_PROFILES"
           TopLeft="5.50000000000001,108.166666666667" />
         <EdgeLayout
-          Id="Package\Parent Container\Num\Reload Nums - ADO NET\Reload from EXM.Paths[ADO NET Source Output]"
-          TopLeft="92.8333333333333,48.1666666666667">
+          Id="Package\Parent Container\Reload raw data - Flat File\Product Profiles\Load data.Paths[Flat File Source Output]"
+          TopLeft="110.833333333333,48.1666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -33739,30 +35174,28 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
   <TaskHost
-    design-time-name="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task">
+    design-time-name="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data">
     <LayoutInfo>
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task\OLE DB Source"
-          TopLeft="14.8333333333334,5.50000000000004" />
+          Size="208,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\Organization Hierarchy csv"
+          TopLeft="5.50000000000001,5.50000000000004" />
         <NodeLayout
-          Size="173.333333333334,42.6666666666667"
-          Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task\Flat File Destination"
-          TopLeft="5.50000000000001,108.166666666667" />
+          Size="156,42.6666666666667"
+          Id="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER"
+          TopLeft="31.5,108.166666666667" />
         <EdgeLayout
-          Id="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="92.1666666666667,48.1666666666667">
+          Id="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data.Paths[Flat File Source Output]"
+          TopLeft="109.5,48.1666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -33786,10 +35219,15 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Parent Container\Branch Tran file breakout\Foreach Loop Container\Data Flow Task\OLE DB Source">
+    design-time-name="Package\Parent Container\Reload raw data - Flat File\Organization Hierarchy\Load data\stg_ORG_HIER">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
