@@ -2,8 +2,8 @@ USE [msdb]
 GO
 
 /****** Object:  Job [LoadEXM_xx.dtsx Package]    Script Date: 11/21/2019 8:31:16 PM ******/
-EXEC msdb.dbo.sp_delete_job @job_id=N'a1ace135-f5c0-4e7c-a5b9-09f69fc4bfde', @delete_unused_schedule=1
-GO
+--EXEC msdb.dbo.sp_delete_job @job_id=N'a1ace135-f5c0-4e7c-a5b9-09f69fc4bfde', @delete_unused_schedule=1
+--GO
 
 /****** Object:  Job [LoadEXM_xx.dtsx Package]    Script Date: 11/21/2019 8:31:16 PM ******/
 BEGIN TRANSACTION
